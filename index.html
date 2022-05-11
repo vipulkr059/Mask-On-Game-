@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/c1a22938b1.js" crossorigin="anonymous"></script>
+    <title>Mask On</title>
+</head>
+<body>
+    <h1>Mask - ON !!! </h1>
+    <button onClick="startGame()" id="start">Start!</button>
+    <button id="music"><i class="fas fa-music"></i></button>
+    <button id="reset">
+        <i class="fas fa-redo"></i>
+      </button>
+
+      <div class="modal">
+          <div class="content">
+            <span class="str">LET'S GO!!!</span>
+            <span id="rules">How To Play?
+                <p id="rule_content" style="font-size: 25px;">Fine All Unmasked Person And Reach the Target To WIN.If You Fine Person With Mask Will Deduct Your Stars And If You  Are Out of Stars,Then Game Over... </p>
+            </span>
+            <span class="p1">&times;</span>
+                <img id="p1" src="image/person40.png" alt="">
+            
+            <span class="p2">&#10003;</span>
+                <img id="p2" src="image/person41.png" alt="">
+                <span style="    position: absolute;
+                left: 27%;
+                top: 55%;
+                font-size: 15px;
+                font-weight: bold;">Target Bar
+
+                </span>
+                <img src="image/bar.png" alt="" style="height: 35%;
+                position: absolute;
+                left: 33%;">
+
+                <span style="position: absolute;
+                left: 46%;
+                top: 50%;
+                font-size: 15px;
+                font-weight: bold;">Star Batch</span>
+                <img src="image/modalBatch.png" alt="" style="    position: absolute;
+                left: 53%;
+                height: 12%;
+            ">
+            
+            
+           
+              <span class="close">&times;</span>
+              
+          </div>
+      </div>
+
+    <div class="wrapper" >
+        <div class="door door1">
+            <div class="person"></div>
+        </div>
+        
+        <div class="door door2">
+            <div class="person"></div>
+        </div>
+
+        <div class="door door3">
+            <div class="person"></div>
+        </div>
+
+        <div class="door door4">
+            <div class="person"></div>
+        </div>
+
+        <div class="door door5">
+            <div class="person"></div>
+        </div>
+
+        <div class="door door6">
+            <div class="person"></div>
+
+        </div>
+        
+        <div class="door door7">
+            <div class="person"></div>
+        </div>
+
+        <div class="door door8">
+            <div class="person"></div>
+        </div>
+
+        <div class="progress">
+            <div class="prog animate" id="status">
+                
+            </div> 
+            <span id="tag">0 </i></span>           
+        </div>
+        <div class="batch">
+            <div id="star"></div>
+                <img src="image/batch.png" alt="" style="    position: absolute;
+                bottom: 0;
+                right: 10px;">
+                
+                <img src="image/star.png" alt="" id="star1">
+                <img src="image/star.png" alt="" id="star2">
+                <img src="image/star.png" alt="" id="star3">
+
+            </div>
+        </div>
+
+        <div id="modal2">
+            <div class="content2">
+                <span style="position: absolute;
+                left: 35%;
+                font-size: 35px;
+                ">GAME OVER!!!</span>
+
+                <img src="image/gameover.png" alt="" style="    position: absolute;
+                height: 60%;
+                top: 25%;left: 10px;;">
+                <span style="position: absolute;
+                font-size: 30px;
+                left: 35%;
+                top: 50%;">YOU'RE FIRED</span>
+
+                <span style="position: absolute;
+                right: 35px;
+                font-size: 25px;
+                bottom: 25px;
+                font-weight: 800;" class="Play">PLAY AGAIN</span>
+
+            </div>
+        </div>
+        <div id="modal3">
+            <div class="content3">
+                <span style="position: absolute;
+                left: 30%;
+                font-size: 35px;
+                ">CONGRATULATION!!!</span>
+
+                <img src="image/cash-bag.png" alt="" style="    position: absolute;
+                height: 60%;
+                top: 25%;left: 10px;;">
+                <span style="position: absolute;
+                font-size: 30px;
+                left: 35%;
+                top: 50%;">TARGET ACHIEVED</span>
+
+                <span style="position: absolute;
+                right: 35px;
+                font-size: 25px;
+                bottom: 25px;
+                font-weight: 800;" class="play">PLAY AGAIN</span>
+
+            </div>
+        </div>
+    </div>
+    <audio src="sounds/bg2.mp3" id="bg"></audio>
+    <audio src="sounds/pass.wav" id="success"></audio>
+    <audio src="sounds/fail.mp3" id="fail"></audio>
+    <audio src="sounds/gameover.mp3" id="gameover"></audio>
+    <audio src="" id="win"></audio>
+
+
+    <script src="Js/script.js">
+
+    </script>
+</body>
+</html>
